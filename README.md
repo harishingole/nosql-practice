@@ -1,0 +1,2 @@
+# nosql-practice
+Training Deqode
