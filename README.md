@@ -1,29 +1,29 @@
 # nosql-practice
 Training Deqode
 #Day 1
-Configuration of below technical is done
-git
-docker
-sts
-postman
-maven
-java (jdk 1.8)
-mongodb
+Configuration of below technical is done<br />
+git<br />
+docker<br />
+sts<br />
+postman<br />
+maven<br />
+java (jdk 1.8)<br />
+mongodb<br />
 
-#NoSql 
-Understands the differences of sql and nosql
-get the brief knowledge of caps theorem
-understanding of architecture of mongodb and features
-Understanding of MOngodb and mongodb compass
+#NoSql <br />
+Understands the differences of sql and nosql<br />
+get the brief knowledge of caps theorem<br />
+understanding of architecture of mongodb and features<br />
+Understanding of MOngodb and mongodb compass<br />
 
-Perform crud operation like create db , read , update and delete
-Insert into db for e.g
+Perform crud operation like create db , read , update and delete<br />
+Insert into db for e.g<br />
 
-#To insert one record
-db.RecordsDB.insertOne({
-    name: "Marsh",
-    age: "6 years",
-    species: "Dog",
-    ownerAddress: "380 W. Fir Ave",
-    chipped: true
-})
+#To insert one record<br />
+db.RecordsDB.insertOne({<br />
+    name: "Marsh",<br />
+    age: "6 years",<br />
+    species: "Dog",<br />
+    ownerAddress: "380 W. Fir Ave",<br />
+    chipped: true<br />
+})<br />
