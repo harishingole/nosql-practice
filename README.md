@@ -27,3 +27,32 @@ db.RecordsDB.insertOne({<br />
     ownerAddress: "380 W. Fir Ave",<br />
     chipped: true<br />
 })<br />
+
+
+#Day 4
+
+ show dbs<br />
+admin   0.000GB<br />
+config  0.000GB<br />
+local   0.000GB<br />
+> use demoDatabase;<br />
+switched to db demoDatabase<br />
+> show dbs<br />
+admin   0.000GB<br />
+config  0.000GB<br />
+local   0.000GB<br />
+> db.createCollection("contacts");<br />
+{ "ok" : 1 }<br />
+> show dbs<br />
+admin         0.000GB<br />
+config        0.000GB<br />
+demoDatabase  0.000GB<br />
+local         0.000GB<br />
+> db.dropDatabase();<br />
+{ "ok" : 1 }<br />
+> show dbs<br />
+admin   0.000GB<br />
+config  0.000GB<br />
+local   0.000GB<br />
+> <br />
+
