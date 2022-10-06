@@ -1,0 +1,29 @@
+Employee> db.createUser({
+... user : "Harish",
+... pwd : "some0",
+... roles:[{role:"Engineer", db:"employee"}]})
+MongoServerError: Could not find role: Engineer@employee
+Employee> db.createUser(
+...   {
+...     user: "cherry",
+...     pwd: "some_password",
+...     roles: [ { role: "readWrite", db: "employees" } ]
+...   }
+... )
+{ ok: 1 }
+Employee> db.getUser();
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Database.getUser)
+Employee> db.getUsers();
+{
+  users: [
+    {
+      _id: 'Employee.cherry',
+      userId: new UUID("43e6cf96-a345-4274-9111-ff84cc221c41"),
+      user: 'cherry',
+      db: 'Employee',
+      roles: [ { role: 'readWrite', db: 'employees' } ],
+      mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+    }
+  ],
+  ok: 1
+}
