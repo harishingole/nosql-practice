@@ -27,3 +27,29 @@ Employee> db.getUsers();
   ],
   ok: 1
 }
+##################################################################################
+Using PasswordPromt()
+
+admin> db.createUser(
+...   {
+...     user: "AdminCherry",
+...     pwd: passwordPrompt(),
+...     roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+...  }
+... )
+Enter password
+******{ ok: 1 }
+admin> show users
+[
+  {
+    _id: 'admin.AdminCherry',
+    userId: new UUID("107c8b5d-c23c-496e-8850-0b1ddb9f66ce"),
+    user: 'AdminCherry',
+    db: 'admin',
+    roles: [
+      { role: 'readWriteAnyDatabase', db: 'admin' },
+      { role: 'userAdminAnyDatabase', db: 'admin' }
+    ],
+    mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+  }
+]
